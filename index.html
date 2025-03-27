@@ -21,7 +21,7 @@
         let timer;
         
         function fetchQuestions() {
-            fetch("https://opentdb.com/api.php?amount=3&category=21&difficulty=easy&type=multiple")
+            fetch("https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple")
                 .then(res => res.json())
                 .then(data => {
                     questions = data.results.map(q => {
