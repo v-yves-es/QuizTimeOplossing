@@ -69,7 +69,7 @@
                 return;
             }
             
-            document.getElementById("question").textContent = questions[questionIndex].question;
+            document.getElementById("question").innerHTML = questions[questionIndex].question;
             
             let answersDiv = document.getElementById("answers");
             answersDiv.innerHTML = "";
